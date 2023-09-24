@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Forms Challenge</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/" method="GET">
+
+        <section>
+
+          <h2 id="first-h2">How can we help you?</h2>
+
+          <ul>
+
+            <li>
+              <label for="name">Your Name</label>
+              <input type="text" name="user-name" id="name" required />
+
+            </li>
+            <li>
+
+              <label for="email">Your E-Mail Address</label>
+              <input type="email" name="user-email" id="email" required />
+            </li>
+            <li>
+
+              <label for="no">Your Phone Number</label>
+              <input type="tel" name="user-no" id="no" minlength="10" required />
+            </li>
+            <li>
+
+              <label for="text">Your Message</label>
+              <textarea name="feedback" id="text" rows="8" minlength="10" maxlength="200" required></textarea>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section>
+
+          <label for="find">How did you find us?</label>
+          <select name="findus" id="find">
+            <option value="Web Search">Web search</option>
+            <option value="Insta">Insta</option>
+            <option value="Facebook">Facebook</option>
+          </select>
+
+        </section>
+
+        <section>
+
+          <h2>How should we reply?</h2>
+
+            <ul>
+
+              <li class="inline-control-flex">
+                <input type="radio" id="call" name="asking" value="call" required />
+                <label for="call">Call me</label>
+              </li>
+              <li class="inline-control-flex">
+                <input type="radio" id="oemail" name="asking" value="email"
+                required />
+                <label for="oemail">Send me an email</label>
+              </li>
+              
+              <li class="inline-control-flex">
+                <input type="radio" id="nreply" name="asking" value="nreply"
+                required />
+                <label for="nreply">Don't reply</label>
+              </li>
+              
+            </ul>
+            
+            </section>
+            
+            <section>
+              
+              <li class="inline-control-flex" id="accept-terms">
+                <input type="checkbox" id="terms" required />
+                <label for="terms">Accept Terms</label>
+              </li>
+              
+          </section>
+
+
+        <section>
+
+          <div class="button">
+
+            <button type="reset" class="btn-empty">Clear</button>
+            <button class="btn-filled">Submit</button>
+          </div>
+
+        </section>
+      </form>
+    </main>
+  </body>
+
+</html>
